@@ -5,8 +5,7 @@ Android Studio & Flutter SDK
 
 
 ## 실습 내용
-Android Studio 와 Flutter SDK 개발환경 구축 후 화면에 Hello World   
-출력되게 코딩
+Android Studio 와 Flutter SDK 개발환경 구축 후 화면에 Hello World 화면이 출력되게 코딩
 
 작성 코드
 <pre>
