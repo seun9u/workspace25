@@ -37,5 +37,7 @@ class MyApp extends StatelessWidget {
 </pre>
 
 
+* * *
 ### 실행 결과
-![abcd](https://github.com/user-attachments/assets/8cad48d7-77f9-43d2-83b8-570db4063c2c)
+![실행 결과 화면](https://github.com/user-attachments/assets/210588bd-68cc-40fb-9870-7df5b9c9457a)
+
