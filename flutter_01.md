@@ -40,5 +40,4 @@ class MyApp extends StatelessWidget {
 * * *
 ### 실행 결과
 ![실행 결과 화면](./image/abcd.png)
-![실행 결과 화면](https://github.com/user-attachments/assets/210588bd-68cc-40fb-9870-7df5b9c9457a)
 
