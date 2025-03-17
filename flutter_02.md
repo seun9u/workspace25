@@ -35,7 +35,7 @@ void main() {
 ![코드 실행 결과](./images/flutter_02-1.png)
 
 
-## 실습 예제
+## 실습 예제1
 위에 출력했던 사각형에서 X 표시를 추가하기
 
 작성 코드
@@ -67,4 +67,97 @@ void main() {
 
 
 ### 실행 결과
-![코드 실행 결과](./images/flutter_02-1-1.png)
+![코드 실행 결과](./images/flutter_02-1-1.jpg)
+
+
+
+## 실습 예제2
+위에 출력했던 사각형에서 \ 방향 표시 추가하기
+
+작성 코드
+<pre>
+<code>
+void main() {
+  var n = 10;
+  var result = "";
+  for (var y = 0; y < n; y++) {
+    for (var x = 0; x < n; x++) {
+      var c = y == 0 || y == n - 1 || x == 0 || x == n - 1 || y == x;
+    
+      if (c) {
+        result += "=";
+      } else {
+        result += " ";
+      }
+    }
+    result += "\n";
+  }
+  print(result);
+}
+</code>
+</pre>
+
+
+### 실행 결과
+![코드 실행 결과](./images/flutter_02-1-2.jpg)
+
+
+## 실습 예제3
+위에 출력했던 사각형에서 / 방향 표시 추가하기
+
+작성 코드
+<pre>
+<code>
+void main() {
+  var n = 10;
+  var result = "";
+  for (var y = 0; y < n; y++) {
+    for (var x = 0; x < n; x++) {
+      var c = y == 0 || y == n - 1 || x == 0 || x == n - 1 || y + x == n - 1;
+
+      if (c) {
+        result += "=";
+      } else {
+        result += " ";
+      }
+    }
+    result += "\n";
+  }
+  print(result);
+}
+</code>
+</pre>
+
+
+### 실행 결과
+![코드 실행 결과](./images/flutter_02-1-3.png)
+
+
+## 실습 예제4
+위에 출력했던 사각형에서 네모 안쪽을 다 채우기
+
+작성 코드
+<pre>
+<code>
+void main() {
+  var n = 10;
+  var result = "";
+  for (var y = 0; y < n; y++) {
+    for (var x = 0; x < n; x++) {
+      var c = true;
+      if (c) {
+        result += "=";
+      } else {
+        result += " ";
+      }
+    }
+    result += "\n";
+  }
+  print(result);
+}
+</code>
+</pre>
+
+
+### 실행 결과
+![코드 실행 결과](./images/flutter_02-1-4.jpg)
