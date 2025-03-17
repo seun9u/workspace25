@@ -67,7 +67,7 @@ void main() {
 
 
 ### 실행 결과
-![코드 실행 결과](./images/flutter_02-1-1.jpg)
+![코드 실행 결과](./images/flutter_02-1-1.png)
 
 
 
@@ -130,7 +130,7 @@ void main() {
 
 
 ### 실행 결과
-![코드 실행 결과](./images/flutter_02-1-3.png)
+![코드 실행 결과](./images/flutter_02-1-3.jpg)
 
 
 ## 실습 예제4
