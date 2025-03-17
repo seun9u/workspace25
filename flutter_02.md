@@ -35,8 +35,8 @@ void main() {
 ![코드 실행 결과](./images/flutter_02-1.png)
 
 
-## 실습 내용
-Dart 문법을 연습할수있는 [dartpad.dev](https://dartpad.dev/)를 활용하여 정사각형의 길이(n)를 입력하고 사각형을 출력해보기
+## 실습 예제
+위에 출력했던 사각형에서 X 표시를 추가하기
 
 작성 코드
 <pre>
@@ -44,11 +44,15 @@ Dart 문법을 연습할수있는 [dartpad.dev](https://dartpad.dev/)를 활용�
 void main() {
   var n = 10;
   var result = "";
+
   for (var y = 0; y < n; y++) {
     for (var x = 0; x < n; x++) {
       var c = y == 0 || y == n - 1 || x == 0 || x == n - 1;
+      var d = x == y || x + y == n - 1;
 
       if (c) {
+        result += "=";
+      } else if (d) {
         result += "=";
       } else {
         result += " ";
@@ -63,4 +67,4 @@ void main() {
 
 
 ### 실행 결과
-![코드 실행 결과](./images/flutter_02-1.png)
+![코드 실행 결과](./images/flutter_02-1-2.png)
