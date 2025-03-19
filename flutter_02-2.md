@@ -1,9 +1,8 @@
-# Flutter_022
+# Flutter_02-2
 Android Studio & Flutter SDK
 - Android Studio Meerkat | 2024.3.1 Windows
 - Flutter_windows_3.29.1-stable
 - https://dartpad.dev/
-
 
 
 ## 실습 내용
@@ -25,6 +24,5 @@ void main() {
 </pre>
 
 
-
 ### 실행 결과
-![코드 실행 결과](./images/flutter_02-2.png)
+![코드 실행 결과](./images/flutter_022.png)
