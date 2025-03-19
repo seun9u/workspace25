@@ -27,4 +27,4 @@ void main() {
 
 
 ### 실행 결과
-![코드 실행 결과](./images/flutter_022.png)
+![코드 실행 결과](./images/flutter_02-2.png)
