@@ -1,4 +1,4 @@
-# WHOIS OpenAPI 를 활용한 도메인/IP 정보 알아보기
+# WHOIS OpenAPI를 활용한 도메인/IP 정보 알아보기
 
 
 ## 교육 내용
