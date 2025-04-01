@@ -1,4 +1,4 @@
-# Flutter_04-1
+# Flutter_04-2
 Android Studio & Flutter SDK
 - Android Studio Meerkat | 2024.3.1 Windows
 - Flutter_windows_3.29.1-stable
@@ -6,7 +6,7 @@ Android Studio & Flutter SDK
 
 
 ## 실습 내용
-Android Studio 와 Flutter 를 활용하여 화면에 코드 출력 후 버튼을 누르면 +2 씩 증가되는 프로그램 코딩
+Android Studio 와 Flutter 를 활용하여 화면에 최초 Hello 문구 출력 후 버튼 클릭시 World, 다시 클릭시 Hello 로 바뀌는 프로그램 코딩
 
 
 
@@ -19,7 +19,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: '플로터 데모 홈페이지'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -46,11 +45,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+
+  var _text = 'Hello';
+  var _isToogled = false;
+
 
   void _incrementCounter() {
     setState(() {
-      _counter +=2;
+      _text = _isToogled ? 'Hello' : 'World';
+      _isToogled = !_isToogled;
     });
   }
 
@@ -60,25 +63,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text('Hello World'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('You have pushed the button this many times: 한글 잘 나와용'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+      body : Text(_text,
+          style : TextStyle(fontSize : 40),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+        child: const Icon(Icons.touch_app),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
@@ -87,7 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 #### 실행 결과
-![코드 실행 결과](./images/flutter_04-1-1.png)
-![코드 실행 결과](./images/flutter_04-1-2.png)
-![코드 실행 결과](./images/flutter_04-1-3.png)
+![코드 실행 결과](./images/flutter_04-2-1.png)
+![코드 실행 결과](./images/flutter_04-2-2.png)
 
