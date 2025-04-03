@@ -16,7 +16,7 @@ Android Studio 와 Flutter 를 활용하여 화면에 최초 Hello 문구 출력
 <code>
 import 'package:flutter/material.dart';
 
-void main() {
+void main() { 
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
