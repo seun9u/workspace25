@@ -58,4 +58,4 @@ print(arr3)
 
 
 #### 실행 결과
-![코드 실행 결과](./Python/images/python_01.jpg)
+![코드 실행 결과](/Python/images/python_01.jpg)
