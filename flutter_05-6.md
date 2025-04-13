@@ -1,4 +1,4 @@
-# Flutter_05-5
+# Flutter_05-6
 Android Studio & Flutter SDK
 - Android Studio Meerkat | 2024.3.1 Windows
 - Flutter_windows_3.29.1-stable
@@ -6,7 +6,7 @@ Android Studio & Flutter SDK
 
 
 ## 실습 내용
-Android Studio 와 Flutter 를 활용하여 화면에 Container 구성 후 각 구역마다 색상 배치하기기
+Android Studio 와 Flutter 를 활용하여 화면에 Container 구성 후 각 구역마다 색상 배치하기
 
 
 
@@ -16,7 +16,6 @@ Android Studio 와 Flutter 를 활용하여 화면에 Container 구성 후 각 �
 <pre>
 <code>
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
