@@ -1,4 +1,4 @@
-# Flutter_06-2
+# Flutter_06-3
 Android Studio & Flutter SDK
 - Android Studio Meerkat | 2024.3.1 Windows
 - Flutter_windows_3.29.1-stable
@@ -16,8 +16,7 @@ main.dart 작성 코드
 <pre>
 <code>
 import 'package:flutter/material.dart';
-
-import 'package:a_6_2/test_TextField.dart';
+import 'package:a_6_2/test_CheckBox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,10 +33,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:TestTextField(),
+      // home:TestTextField(),
+      home:TestCheckBox(),
     );
   }
 }
+
 </code>
 </pre>
 
@@ -47,28 +48,45 @@ test_TextField.dart 작성 코드
 <code>
 import 'package:flutter/material.dart';
 
-class TestTextField extends StatelessWidget {
+class TestCheckBox extends StatefulWidget {
+  const TestCheckBox({super.key});
+
+  @override
+  State<TestCheckBox> createState() => _CheckboxState();
+}
+
+class _CheckboxState extends State<TestCheckBox> {
+  bool? isChecked1 = false;
+  bool isChecked2 = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('TextField 테스트')),
-      body: Padding(
-        padding: EdgeInsets.all(16.0),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text('Checkbox / Switch 테스트'),
+      ),
+      body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextField(),
+            Checkbox(
+              value: isChecked1,
+              onChanged: (value) {
+                setState(() {
+                  isChecked1 = value;
+                });
+              },
+            ),
+            SizedBox(height: 80),
 
-            SizedBox(height: 32,),
-
-            TextField(decoration: InputDecoration(labelText: '여기에 입력하세요')),
-
-            SizedBox(height: 32,),
-            
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: '여기도 입력하세요',
-              ),
+            Switch(
+              value: isChecked2,
+              onChanged: (value) {
+                setState(() {
+                  isChecked2 = value;
+                });
+              },
             ),
           ],
         ),
