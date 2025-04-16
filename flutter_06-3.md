@@ -6,7 +6,7 @@ Android Studio & Flutter SDK
 
 
 ## 실습 내용
-Android Studio 와 Flutter 를 활용하여 화면에 TextField 출력 후 입력해보기
+Android Studio 와 Flutter 를 활용하여 화면에 Checkbox 출력 후 체크해보기
 
 
 
@@ -101,5 +101,5 @@ class _CheckboxState extends State<TestCheckBox> {
 
 
 #### 실행 결과
-![코드 실행 결과](./images/flutter_06-2-1.png)
-![코드 실행 결과](./images/flutter_06-2-2.png)
+![코드 실행 결과](./images/flutter_06-3-1.png)
+![코드 실행 결과](./images/flutter_06-3-2.png)
