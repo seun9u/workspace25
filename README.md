@@ -3,7 +3,7 @@ Android Studio & Flutter SDK
 
 
 ## 프로젝트 소개
-Android Studio & Flutter SDK 를 활용하여 실습해본 내용정리
+Android Studio & Flutter SDK 를 활용하여 실습해본 내용 정리
 
 
 ### 개발 환경
