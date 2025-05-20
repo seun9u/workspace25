@@ -21,7 +21,7 @@
 - Android Studio Meerkat | 2024.3.1 (Windows)
 - Flutter_windows_3.29.1-stable
 
-### LLM 활용 도구
+### LLM 활용도구
 - ChatGPT-4o
 - Microsoft Copilot
 
