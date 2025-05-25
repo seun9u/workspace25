@@ -17,16 +17,16 @@
 
 ### 1-2. 기능 흐름도 (기본 로직)
 
-[홈 화면]
+[홈 화면]   
 └─ 오늘 루틴 조회 → 체크 여부 표시 (체크박스 클릭) → Hive에 저장
 
-[루틴 등록 화면]
+[루틴 등록 화면]   
 └─ 이름 입력 + 반복 요일 선택 → 저장 → 홈에 반영
 
-[통계 화면]
+[통계 화면]   
 └─ 일자별 완료 여부 → 달력에 시각화 → 루틴별 성공률 계산
 
-[뱃지 시스템]
+[뱃지 시스템]   
 └─ 연속 성공 여부 감지 → 뱃지 발급 → UI에 표시 (선택적 MVP)
 
 ---
@@ -68,23 +68,24 @@ Flutter_windows_3.29.1-stable
 
 ### 2-2. 디렉토리 구조 예시
 
-lib/
-├── main.dart
-├── models/
-│ └── routine.dart
-├── screens/
-│ ├── home_screen.dart
-│ ├── add_routine_screen.dart
-│ └── stats_screen.dart
-├── widgets/
-│ └── routine_card.dart
-└── services/
-└── storage_service.dart
+lib/   
+├── main.dart   
+├── models/   
+│ └── routine.dart   
+├── screens/   
+│ ├── home_screen.dart   
+│ ├── add_routine_screen.dart   
+│ └── stats_screen.dart   
+├── widgets/   
+│ └── routine_card.dart   
+└── services/   
+└── storage_service.dart   
 
 ---
 
 ### 2-3. 의존성 패키지 추가 (pubspec.yaml)
 
+<pre>
 <code>
 dependencies:
   flutter:
@@ -95,3 +96,4 @@ dependencies:
   table_calendar: ^3.0.9
   provider: ^6.1.1
 </code>
+</pre>
