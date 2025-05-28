@@ -40,4 +40,4 @@ print(lcm(12, 18))   # 출력: 36 (12와 18의 최소공배수)
 
 
 #### 실행 결과
-![코드 실행 결과](/Python/images/python_02.jpg)
+![코드 실행 결과](/Python/images/python_02.png)
