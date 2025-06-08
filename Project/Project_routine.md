@@ -209,8 +209,6 @@ dependencies:
 
 ### 기본 레이아웃 구성
 
----
-
 main.dart 화면 내 하단 네비게이션 바의 버튼을 정의, 세 개의 화면 레이아웃 구성
  
    
@@ -250,7 +248,6 @@ stats_screen.dart 화면 내 달력 구현(dependencies: table_calendar: ^3.0.9)
 home_screen.dart
 ![코드 실행 결과](./images/routine1.png)
 ![코드 실행 결과](./images/routine2.png)
-
 
 stats_screen.dart
 ![코드 실행 결과](./images/stats1.png)
