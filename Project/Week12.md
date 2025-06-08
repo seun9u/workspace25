@@ -12,7 +12,7 @@ stats_screen.dart 화면 내 달력 구현(dependencies: table_calendar: ^3.0.9)
 
 ---
 
-## 기본 기능 구현 모습습
+## 기본 기능 구현 모습
 
 home_screen.dart
 ![코드 실행 결과](./images/routine1.png)
