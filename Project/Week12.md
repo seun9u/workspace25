@@ -5,7 +5,7 @@
 ## ✅ 기본 기능 개발 
 
 home_screen.dart 화면 내 루틴 등록 시 나오는 화면 정리, 등록 루틴 삭제 기능 추가   
-└─ 등록 루틴 클릭 시 메모 등록 기능 추가
+└─ 등록 루틴 클릭 시 메모 등록 기능 추가   
 
 stats_screen.dart 화면 내 달력 구현(dependencies: table_calendar: ^3.0.9) 및 달성률 시각화
 
